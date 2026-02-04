@@ -13,7 +13,7 @@ main {
   padding: 25px;
   border-radius: 20px;
   box-shadow: 0 20px 50px rgba(0, 0, 0, 0.5);
-  width: 320px;
+  width: 340px;
 }
 
 h1 {
@@ -30,7 +30,7 @@ h1 {
 
 #visor {
   background-color: #000;
-  padding: 20px;
+  padding: 18px 20px;
   border-radius: 12px;
   text-align: right;
   border: 1px solid #333;
@@ -45,7 +45,7 @@ h1 {
 section {
   display: flex;
   flex-direction: column;
-  gap: 20px;
+  gap: 18px;
 }
 
 #numeros {
@@ -56,25 +56,24 @@ section {
 
 #numeros button:first-child {
   grid-column: span 3;
-  background-color: #2c2c2c;
 }
 
 #botoes_operacao {
   display: grid;
-  grid-template-columns: repeat(5, 1fr);
-  gap: 8px;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 12px;
 }
 
 button {
-  padding: 18px 5px;
+  padding: 18px 0;
   font-size: 1.1rem;
   font-weight: bold;
   border: none;
-  border-radius: 10px;
+  border-radius: 12px;
   cursor: pointer;
   background-color: #333;
   color: #eee;
-  transition: all 0.2s ease;
+  transition: background-color 0.2s ease, transform 0.15s ease, box-shadow 0.15s ease;
 }
 
 button:hover {
@@ -97,10 +96,18 @@ button:active {
 
 #calcular {
   background-color: #007aff;
-  color: white;
 }
 
 #calcular:hover {
   background-color: #3399ff;
   box-shadow: 0 0 15px rgba(0, 122, 255, 0.4);
+}
+
+#limpar {
+  background-color: #ff3b30;
+}
+
+#limpar:hover {
+  background-color: #ff6b61;
+  box-shadow: 0 0 15px rgba(255, 59, 48, 0.4);
 }

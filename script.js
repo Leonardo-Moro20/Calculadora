@@ -67,3 +67,10 @@ function calcular() {
 
     visor.innerHTML = resultado
 }
+function limpar() {
+    numero1 = ''
+    numero2 = ''
+    resultado = 0
+    temPrimeiroNum = false
+    visor.innerHTML = 0
+}
