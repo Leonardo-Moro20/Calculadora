@@ -7,7 +7,7 @@ let botaop = document.getElementById('soma')
 let botaom = document.getElementById('menos')
 let botaov = document.getElementById('vezes')
 let botaod = document.getElementById('dividir')
-let resultado = 10
+let resultado = 0
 
 function salvanum(num) {
     if (!temPrimeiroNum) {
@@ -55,15 +55,15 @@ function calcular() {
     if (operacao === '-') {
         resultado = Number(numero1) - Number(numero2)
     }
-    if (operacao === "*") {
+    if (operacao === '*') {
         resultado = Number(numero1) * Number(numero2)
     }
-    if (operacao === "/") {
+    if (operacao === '/') {
         resultado = Number(numero1) / Number(numero2)
     }
-    visor.innerHTML = resultado
-    numero1 = ''
+
+    numero1 = resultado
     numero2 = ''
-    temPrimeiroNum = false
-    document.getElementById('visor').innerHTML = resultado
+
+    visor.innerHTML = resultado
 }
