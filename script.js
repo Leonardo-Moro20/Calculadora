@@ -8,6 +8,7 @@ let botaom = document.getElementById('menos')
 let botaov = document.getElementById('vezes')
 let botaod = document.getElementById('dividir')
 let resultado = 0
+let bug = "vai catar coquinho"
 
 function salvanum(num) {
     if (!temPrimeiroNum) {
@@ -21,11 +22,13 @@ function salvanum(num) {
 function primeiroNumero(num) {
     numero1 = numero1 + num
     visor.innerHTML = numero1
+  
 }
 
 function segundoNumero(num) {
     numero2 = numero2 + num
     visor.innerHTML = numero2
+
 }
 
 botaop.addEventListener('click', () => {
@@ -59,12 +62,17 @@ function calcular() {
         resultado = Number(numero1) * Number(numero2)
     }
     if (operacao === '/') {
-        resultado = Number(numero1) / Number(numero2)
+        if (numero2 === '' || Number(numero2) === 0) {
+            limpar()
+            visor.innerHTML = 'Erro'
+            return
+        } else {
+            resultado = Number(numero1) / Number(numero2)
+        }
     }
 
     numero1 = resultado
     numero2 = ''
-
     visor.innerHTML = resultado
 }
 function limpar() {
