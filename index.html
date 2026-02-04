@@ -7,31 +7,34 @@
     <title>Calculadora</title>
   </head>
   <body>
-    <h1>Calculadora Leo</h1>
     <main>
-      <section>
-        <h2 id="visor">0</h2>
-        <div id="numeros">
-          <button onclick="salvanum(0)" id="0">0</button>
-          <button onclick="salvanum(1)" id="1">1</button>
-          <button onclick="salvanum(2)" id="2">2</button>
-          <button onclick="salvanum(3)" id="3">3</button>
-          <button onclick="salvanum(4)" id="4">4</button>
-          <button onclick="salvanum(5)" id="5">5</button>
-          <button onclick="salvanum(6)" id="6">6</button>
-          <button onclick="salvanum(7)" id="7">7</button>
-          <button onclick="salvanum(8)" id="8">8</button>
-          <button onclick="salvanum(9)" id="9">9</button>
-        </div>
+      <h1>Calculadora Leo</h1>
+        <section>
+          <div id="calculadora">
+            <h2 id="visor">0</h2>
+            <div id="numeros">
+              <button onclick="salvanum(0)" id="0">0</button>
+              <button onclick="salvanum(1)" id="1">1</button>
+              <button onclick="salvanum(2)" id="2">2</button>
+              <button onclick="salvanum(3)" id="3">3</button>
+              <button onclick="salvanum(4)" id="4">4</button>
+              <button onclick="salvanum(5)" id="5">5</button>
+              <button onclick="salvanum(6)" id="6">6</button>
+              <button onclick="salvanum(7)" id="7">7</button>
+              <button onclick="salvanum(8)" id="8">8</button>
+              <button onclick="salvanum(9)" id="9">9</button>
+            </div>
 
-        <div id="mais">
-          <button id="soma">+</button>
-          <button id="menos">-</button>
-          <button id="vezes">x</button>
-          <button id="dividir">÷</button>
-          <button onclick="calcular()" id="calcular">=</button>
-        </div>
-      </section>
+            <div id="botoes_operacao">
+              <button id="soma">+</button>
+              <button id="menos">-</button>
+              <button id="vezes">x</button>
+              <button id="dividir">÷</button>
+              <button onclick="calcular()" id="calcular">=</button>
+            </div>
+          </div>
+        </section>
+      </div>
     </main>
 
     <footer></footer>
